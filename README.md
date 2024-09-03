@@ -58,6 +58,7 @@ docker run -d \
   --env-file /root/validator.env \
   --name elixir \
   --restart unless-stopped \
+  -p 17690:17690 \
   elixirprotocol/validator:v3
 ```
 ### 5. Check logs
@@ -74,4 +75,14 @@ docker logs --tail 50 -f <container-ID>
 
 ```
 ![image](https://github.com/user-attachments/assets/0bcda0f6-8cfc-4ade-b2ea-7a73f57bdffe)
+
+Check proposals_produced/up time:
+```
+curl http://localhost:17690/metrics
+```
+
+![image](https://github.com/user-attachments/assets/03a77955-5370-4504-bdbe-5dcf38c305b7)
+
+
+
 
