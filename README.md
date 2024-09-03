@@ -38,7 +38,7 @@ sudo nano ~/validator.env
 **SIGNER_PRIVATE_KEY: The private key from Metamask (without 0x).**
 
 
-### 5. Enroll Validatort
+### 5. Enroll Validator
 
 - Go to: https://testnet-3.elixir.xyz
 - Mint Mock and Stake 1000 Mock
